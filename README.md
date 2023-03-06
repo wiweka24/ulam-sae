@@ -26,4 +26,4 @@ Produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas Praktikum Senior P
 | Anggota 2       | Ilham Faizal Hamka | 20/463602/TK/51594 |
 
 ## Github Pages
-wiweka24.github.io/ulam-sae/
+https://wiweka24.github.io/ulam-sae/
