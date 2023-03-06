@@ -74,12 +74,13 @@ memposting ikan dagangan mereka jika telah terdeteksi segar
 1. Tujuan Produk 
 <br>
 Mempermudah proses monitoring kesegaran ikan. Hal tersebut untuk menjaga tingkat kepercayaan konsumen dan integritas dari penjual ikan. Selain itu nelayan/penjual ikan juga dapat memasarkan hasil tangkapannya dengan syarat bahwa ikan tersebut masih segar.
+<br>
 
 2. Pengguna potensial dari produk dan kebutuhan para pengguna tersebut
 <br>
 Nelayan <br>
 Penjual ikan segar <br>
-Konsumen/Pembeli ikan
+Konsumen/Pembeli ikan <br>
 
 3. Use case diagram
 <br>
