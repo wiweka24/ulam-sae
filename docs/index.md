@@ -1,10 +1,11 @@
 # Ulam Sae  
 Produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas Praktikum Senior Proyek
+[Kelompok](#kelompok-ikan-segar) • [Project](#project) • [Instansi](#instansi) • [Modul 1](#modul-1)
   
 ## Kelompok Ikan Segar
-Ketua Kelompok : Wiweka Yoga Sadewa | 20/456382/TK/50512
-Anggota 1 : M Rifat Bagus A | 20/456371/TK/50501
-Anggota 2 : Ilham Faizal Hamka | 20/463602/TK/51594
+Ketua Kelompok : Wiweka Yoga Sadewa | 20/456382/TK/50512 <br>
+Anggota 1 : M Rifat Bagus A | 20/456371/TK/50501 <br>
+Anggota 2 : Ilham Faizal Hamka | 20/463602/TK/51594 
 
 ## Project
 Senior Project TI
