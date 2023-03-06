@@ -1,6 +1,6 @@
 # Ulam Sae  
 Produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas Praktikum Senior Proyek <br>
-[Kelompok](#kelompok-ikan-segar) • [Project](#project) • [Instansi](#instansi) • [Modul 1](#modul-1)
+[Kelompok](#kelompok-ikan-segar) • [Project](#project) • [Instansi](#instansi) • [Modul 1](#modul-1) • [Tahap SDLC](#tahap-sdlc)
   
 ## Kelompok Ikan Segar
 Ketua Kelompok : Wiweka Yoga Sadewa | 20/456382/TK/50512 <br>
@@ -69,6 +69,22 @@ memposting ikan dagangan mereka jika telah terdeteksi segar
 5. Lean Canvas
 <br>
 ![Lean Canvas](https://user-images.githubusercontent.com/70740913/223020385-cb40baac-dbee-49c6-b466-0654dd596109.png)
+
+## Tahap SDLC
+1. Tujuan Produk 
+<br>
+Mempermudah proses monitoring kesegaran ikan. Hal tersebut untuk menjaga tingkat kepercayaan konsumen dan integritas dari penjual ikan. Selain itu nelayan/penjual ikan juga dapat memasarkan hasil tangkapannya dengan syarat bahwa ikan tersebut masih segar.
+<br>
+2. Pengguna potensial dari produk dan kebutuhan para pengguna tersebut
+<br>
+Nelayan <br>
+Penjual ikan segar <br>
+Konsumen/Pembeli ikan
+<br>
+3. Use case diagram
+4. Entity relationship diagram
+5. Low-fidelity Wireframe
+6. Gantt-Chart pengerjaan proyek dalam kurun waktu 1 semester
 
 
 
