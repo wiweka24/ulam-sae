@@ -7,14 +7,12 @@
   "MD041": false
 } -->
 
-<div align="center">
 
 # Ulam Sae  
 Produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas Praktikum Senior Proyek
 
 [Kelompok](#kelompok-ikan-segar) • [Project](#project) • [Instansi](#instansi) • [Modul 1](#modul-1)
 
-</div>
   
 ## Kelompok Ikan Segar
 |                 |                    |                    |
