@@ -74,17 +74,34 @@ memposting ikan dagangan mereka jika telah terdeteksi segar
 1. Tujuan Produk 
 <br>
 Mempermudah proses monitoring kesegaran ikan. Hal tersebut untuk menjaga tingkat kepercayaan konsumen dan integritas dari penjual ikan. Selain itu nelayan/penjual ikan juga dapat memasarkan hasil tangkapannya dengan syarat bahwa ikan tersebut masih segar.
-<br>
+
 2. Pengguna potensial dari produk dan kebutuhan para pengguna tersebut
 <br>
 Nelayan <br>
 Penjual ikan segar <br>
 Konsumen/Pembeli ikan
-<br>
+
 3. Use case diagram
-4. Entity relationship diagram
-5. Low-fidelity Wireframe
-6. Gantt-Chart pengerjaan proyek dalam kurun waktu 1 semester
+<br>
+![17756667119708 (6)](https://user-images.githubusercontent.com/70740913/223156376-ab037bc3-5f71-441c-bff4-37318fee6c93.png)
+
+4. Functional requirements untuk use case yang telah dirancang
+<br>
+![Screenshot from 2023-03-06 22-28-27](https://user-images.githubusercontent.com/70740913/223154963-8225d2fa-e313-41af-a03e-c2c2667fb545.png)
+
+5. Entity relationship diagram
+<br>
+![17756682443386](https://user-images.githubusercontent.com/70740913/223156410-ac45cd42-5fe5-4bfd-91dc-5e0e75d0bfc3.png)
+
+6. Low-fidelity Wireframe
+<br>
+![Screenshot from 2023-03-06 22-30-22](https://user-images.githubusercontent.com/70740913/223155591-39b8d11c-8f0e-4dc7-87f1-d728ef9a462e.png)
+<br>
+![Screenshot from 2023-03-06 22-30-04](https://user-images.githubusercontent.com/70740913/223155667-59dd27e2-d9c1-4748-91d0-d9fb62fe1621.png)
+
+7. Gantt-Chart pengerjaan proyek dalam kurun waktu 1 semester
+<br>
+![Screenshot from 2023-03-06 22-30-43](https://user-images.githubusercontent.com/70740913/223155852-87f899be-9b23-43c9-a88b-26eda0f049c9.png)
 
 
 
