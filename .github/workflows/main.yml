@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - 'main'
-      - '456382'
+      - '456382'S
 
 jobs:
   test:
@@ -38,41 +38,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
-          name: apk
+          name: test_apk
           path: app/build/outputs/apk/debug/app-debug.apk
-#  build:
-#    name: Setup Environment and build
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checkout the code to specific branch
-#        uses: actions/checkout@v2
-#
-#      - name: Set up JDK
-#        uses: actions/setup-java@v2
-#        with:
-#          distribution: 'zulu'
-#          java-version: '11'
-#
-#      - name: Setup Android SDK
-#        uses: android-actions/setup-android@v2
-#
-#      - uses: actions/cache@v2
-#        with:
-#          path: |
-#            ~/.gradle/caches
-#            ~/.gradle/wrapper
-#          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-#          restore-keys: |
-#            ${{ runner.os }}-gradle-
-#
-#      - name: Make gradlew executable
-#        run: chmod +x ./gradlew
-#
-#      - name: Generate app bundle
-#        run: ./gradlew app:bundleRelease --stacktrace
-#
-#      - name: Upload Bundle
-#        uses: actions/upload-artifact@v2
-#        with:
-#          name: build_app
-#          path: app/build/outputs/bundle/release/app-release.aab
