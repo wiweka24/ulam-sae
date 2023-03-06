@@ -13,7 +13,7 @@
   
 Produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas Praktikum Senior Proyek
 
-[Kelompok](#kelompok-ikan-segar) • [Github Pages)(#github-pages)
+[Kelompok](#kelompok-ikan-segar) • [Github Pages](#github-pages)
 
 </div>
   
