@@ -1,5 +1,5 @@
 # Ulam Sae  
-Produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas Praktikum Senior Proyek
+Produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas Praktikum Senior Proyek <br>
 [Kelompok](#kelompok-ikan-segar) • [Project](#project) • [Instansi](#instansi) • [Modul 1](#modul-1)
   
 ## Kelompok Ikan Segar
@@ -56,11 +56,19 @@ oleh user. sebagai fungsi tambahan webapp yg dibuat juga memungkinkan penjual un
 memposting ikan dagangan mereka jika telah terdeteksi segar
 <br>
 <br>
-<b> Rancangan Fitur Solusi </b> 
+<b> Rancangan Fitur Solusi </b>
+<br>
+![Rancangan Fitur Solusi](https://user-images.githubusercontent.com/70740913/223020141-e3419655-1d4d-45d1-a2ff-80023f6cce3f.png)
 
-4. Analisis Kompetitor
+4. Analisis Kompetitor 
+<br>
+![kompetitor1](https://user-images.githubusercontent.com/70740913/223020170-0b9ef282-361e-461e-9f19-34d42ed52832.png)
+![kompetitor2](https://user-images.githubusercontent.com/70740913/223020177-2907b309-6888-4595-bf66-b20a98bf7edd.png)
+![kompetitor3](https://user-images.githubusercontent.com/70740913/223020182-67de679a-8819-430a-bef7-94aa7e00c3b1.png)
 
 5. Lean Canvas
+<br>
+![Lean Canvas](https://user-images.githubusercontent.com/70740913/223020385-cb40baac-dbee-49c6-b466-0654dd596109.png)
 
 
 
