@@ -3,7 +3,6 @@
 produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas praktikum senior proyek
 
 <br>
-<br>
 
 Kelompok Ikan Segar <br>
 Ketua Kelompok: Wiweka Yoga Sadewa - 20/456382/TK/50512 <br>
