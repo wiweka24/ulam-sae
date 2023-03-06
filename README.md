@@ -1,10 +1,26 @@
-# ulam-sae
+<!-- markdownlint-configure-file {
+  "MD013": {
+    "code_blocks": false,
+    "tables": false
+  },
+  "MD033": false,
+  "MD041": false
+} -->
 
-produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas praktikum senior proyek
+<div align="center">
 
-<br>
+# Ulam Sae
+  
+Produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas Praktikum Senior Proyek
 
-Kelompok Ikan Segar <br>
-Ketua Kelompok: Wiweka Yoga Sadewa - 20/456382/TK/50512 <br>
-Anggota 1: M Rifat Bagus A - 20/456371/TK/50501 <br>
-Anggota 2: ILHAM FAIZAL HAMKA – 20/463602/TK/51594 <br>
+[Kelompok](#kelompok-ikan-segar) •
+
+</div>
+  
+## Kelompok Ikan Segar
+
+|                 |                    |                    |
+| --------------- | ------------------ | ------------------ |
+| Ketua Kelompok  | Wiweka Yoga Sadewa | 20/456382/TK/50512 |
+| Anggota 1       | M Rifat Bagus A    | 20/456371/TK/50501 |
+| Anggota 2       | Ilham Faizal Hamka | 20/463602/TK/51594 |
