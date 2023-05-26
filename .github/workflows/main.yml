@@ -16,7 +16,7 @@ jobs:
       - name: Setup JDK
         uses: actions/setup-java@v2
         with:
-          distribution: 'adopt-openjdk'
+          distribution: 'adopt'
           java-version: '17'
       - name: Run Tests
         run: bash ./gradlew test --stacktrace
@@ -31,7 +31,7 @@ jobs:
       - name: Setup JDK
         uses: actions/setup-java@v2
         with:
-          distribution: 'adopt-openjdk'
+          distribution: 'adopt'
           java-version: '17'
       - name: Build APK
         run: bash ./gradlew assembleDebug --stacktrace
