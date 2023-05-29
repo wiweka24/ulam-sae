@@ -10,6 +10,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.senpro.ulamsae.R
 import com.senpro.ulamsae.databinding.ActivityMainBinding
 import com.senpro.ulamsae.ui.MainActivityViewModel
+import com.senpro.ulamsae.ui.camera.CameraActivity
 import com.senpro.ulamsae.ui.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +28,10 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         setupViewModel()
+
+        binding.fabCamera.setOnClickListener {
+            startActivity(Intent(this, CameraActivity::class.java))
+        }
     }
 
     private fun setupViewModel() {

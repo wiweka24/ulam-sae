@@ -20,5 +20,8 @@ data class LoginData(
 	val accessToken: String,
 
 	@field:SerializedName("refreshToken")
-	val refreshToken: String
+	val refreshToken: String,
+
+	@field:SerializedName("id")
+	val id: String
 )

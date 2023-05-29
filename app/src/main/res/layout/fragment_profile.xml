@@ -57,7 +57,7 @@
             android:layout_height="28dp"
             android:layout_marginEnd="8dp"
             android:alpha="0.5"
-            android:background="@drawable/ic_baseline_face_retouching_natural_24"
+            android:background="@drawable/ic_baseline_attach_email_24"
             android:backgroundTint="?attr/colorOnSecondary" />
 
         <TextView
@@ -97,7 +97,7 @@
             android:layout_height="28dp"
             android:layout_marginEnd="8dp"
             android:alpha="0.5"
-            android:background="@drawable/ic_baseline_attach_email_24"
+            android:background="@drawable/ic_baseline_face_retouching_natural_24"
             android:backgroundTint="?attr/colorOnSecondary" />
 
         <TextView

@@ -1,7 +1,5 @@
 package com.senpro.ulamsae.ui.profile
 
-import android.graphics.drawable.Animatable
-import android.graphics.drawable.AnimatedVectorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +11,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.senpro.ulamsae.databinding.FragmentProfileBinding
 import com.senpro.ulamsae.ui.ViewModelFactory
-
 
 class ProfileFragment : Fragment() {
 
@@ -49,15 +46,20 @@ class ProfileFragment : Fragment() {
     }
 
     private fun setupAction() {
-        val user = viewModel.getCurrentUser()
-        binding.apply {
-            tvUsername.text = user.username
-            tvEmail.text = user.email
-            Glide.with(requireActivity())
-                .load("https://picsum.photos/512")
-                .transition(DrawableTransitionOptions.withCrossFade())
-                .into(profileImage)
+        viewModel.getSettings()
+
+        viewModel.user.observe(viewLifecycleOwner) { user ->
+            binding.apply {
+                tvUsername.text = user?.username
+                tvEmail.text = user?.fullname
+                Glide.with(requireActivity())
+                    .load("https://picsum.photos/512")
+                    .transition(DrawableTransitionOptions.withCrossFade())
+                    .into(profileImage)
+            }
         }
+
+
     }
 
     private fun onBackPressed() {

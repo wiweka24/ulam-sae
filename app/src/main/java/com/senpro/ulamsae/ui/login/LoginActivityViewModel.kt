@@ -8,7 +8,6 @@ import androidx.lifecycle.ViewModel
 import com.senpro.ulamsae.api.ApiConfig
 import com.senpro.ulamsae.model.Settings
 import com.senpro.ulamsae.data.SettingsRepository
-import com.senpro.ulamsae.model.User
 import com.senpro.ulamsae.model.request.LoginRequest
 import com.senpro.ulamsae.model.response.LoginResponse
 import retrofit2.Call
@@ -17,8 +16,8 @@ import retrofit2.Response
 
 class LoginActivityViewModel(private val repository: SettingsRepository) : ViewModel() {
 
-    fun saveSession(user: User) {
-        repository.setLogin(true, user)
+    fun saveSession(token: String, refToken: String, id: String) {
+        repository.setLogin(true, token, refToken, id)
     }
 
     fun login(loginRequest: LoginRequest): LiveData<Boolean> {
@@ -31,10 +30,7 @@ class LoginActivityViewModel(private val repository: SettingsRepository) : ViewM
                     if (responseBody != null) {
 //                        Log.d("message", responseBody.accessToken)
 //                        showToast(response.)
-                        val newUser = User(
-                            loginRequest.username, loginRequest.password, responseBody.accessToken
-                        )
-                        saveSession(newUser)
+                        saveSession(responseBody.accessToken, responseBody.refreshToken, responseBody.id)
                         loginLiveData.value = true
                         return
                     }

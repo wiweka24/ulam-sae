@@ -15,15 +15,23 @@
     <string name="logout">Logout</string>
     <string name="theme_status">status</string>
     <string name="theme_now">Theme</string>
-    <string name="message_login_page">masukkan data akun anda</string>
-    <string name="email">Username</string>
+
+    <!--  Login & Register  -->
     <string name="login">Login</string>
+    <string name="email">Username</string>
     <string name="password">Password</string>
-    <string name="user_name">John Doe</string>
     <string name="profile">Profile</string>
     <string name="user_email">Email</string>
-    <string name="not_have_account">don\'t have an account?</string>
     <string name="register">Register</string>
+    <string name="not_have_account">don\'t have an account?</string>
     <string name="have_an_account">already have an account?</string>
+
+    <!--  Profile  -->
     <string name="fullname">Fullname</string>
+    <string name="user_name">John Doe</string>
+
+    <!--  Camera  -->
+    <string name="camera">Take Picture</string>
+    <string name="gallery">Galeri</string>
+    <string name="upload">Scan</string>
 </resources>
