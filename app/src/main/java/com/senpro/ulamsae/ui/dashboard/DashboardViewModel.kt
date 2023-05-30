@@ -1,7 +1,8 @@
-package com.dicoding.senpro.ulamsae.ui.dashboard
+package com.senpro.ulamsae.ui.dashboard
 
 import androidx.lifecycle.ViewModel
+import com.senpro.ulamsae.data.SettingsRepository
 
-class DashboardViewModel : ViewModel() {
+class DashboardViewModel(private val repository: SettingsRepository) : ViewModel() {
     // TODO: Implement the ViewModel
 }

@@ -34,4 +34,11 @@
     <string name="camera">Take Picture</string>
     <string name="gallery">Galeri</string>
     <string name="upload">Scan</string>
+
+    <!--  Live Camera  -->
+    <string name="capture_button_alt">Capture</string>
+    <string name="unknown">UNKNOWN</string>
+    <string name="live_camera">Live Camera</string>
+    <string name="dashboard">Hi, Someone</string>
+    <string name="scan">Quick Scan</string>
 </resources>
