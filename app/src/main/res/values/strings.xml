@@ -4,7 +4,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_profile">Profile</string>
-    <string name="title_history">History</string>
+    <string name="title_history">Market</string>
     <string name="title_setting">Setting</string>
     <string name="title_scan">Scan</string>
     <string name="change_theme">Dark Mode</string>
@@ -33,7 +33,7 @@
     <!--  Camera  -->
     <string name="camera">Take Picture</string>
     <string name="gallery">Galeri</string>
-    <string name="upload">Scan</string>
+    <string name="upload">Upload to Market</string>
 
     <!--  Live Camera  -->
     <string name="capture_button_alt">Capture</string>
@@ -41,4 +41,7 @@
     <string name="live_camera">Live Camera</string>
     <string name="dashboard">Hi, Someone</string>
     <string name="scan">Quick Scan</string>
+    <string name="harga">harga</string>
+    <string name="nama">nama</string>
+    <string name="take_image_to_upload_to_market">*take image to upload to market</string>
 </resources>

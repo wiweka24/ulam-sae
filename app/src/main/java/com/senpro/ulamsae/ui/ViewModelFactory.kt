@@ -5,6 +5,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.senpro.ulamsae.ui.dashboard.DashboardViewModel
 import com.senpro.ulamsae.di.Injection
+import com.senpro.ulamsae.ui.camera.CameraViewModel
+import com.senpro.ulamsae.ui.history.HistoryViewModel
 import com.senpro.ulamsae.ui.login.LoginActivityViewModel
 import com.senpro.ulamsae.ui.profile.ProfileViewModel
 import com.senpro.ulamsae.ui.register.RegisterActivityViewModel
@@ -26,11 +28,17 @@ class ViewModelFactory(private val context: Context) :
         else if (modelClass.isAssignableFrom(DashboardViewModel::class.java)) {
             return DashboardViewModel(Injection.provideRepository(context)) as T
         }
+        else if (modelClass.isAssignableFrom(HistoryViewModel::class.java)) {
+            return HistoryViewModel(Injection.provideRepository(context)) as T
+        }
         else if (modelClass.isAssignableFrom(RegisterActivityViewModel::class.java)) {
             return RegisterActivityViewModel(Injection.provideRepository(context)) as T
         }
         else if (modelClass.isAssignableFrom(LoginActivityViewModel::class.java)) {
             return LoginActivityViewModel(Injection.provideRepository(context)) as T
+        }
+        else if (modelClass.isAssignableFrom(CameraViewModel::class.java)) {
+            return CameraViewModel(Injection.provideRepository(context)) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
     }

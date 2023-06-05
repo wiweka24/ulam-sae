@@ -265,6 +265,6 @@ class LiveCameraActivity : AppCompatActivity() {
 
     companion object {
         private val TAG = CameraActivity::class.java.simpleName
-        private const val MAX_REPORT = 3
+        private const val MAX_REPORT = 1
     }
 }

@@ -11,26 +11,96 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginVertical="32dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/background_roundedcorner"
-        app:layout_constraintBottom_toTopOf="@+id/cameraXButton"
+        app:layout_constraintBottom_toTopOf="@+id/desc_nama_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_place_holder" />
 
-    <Button
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/desc_nama_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previewImageView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/desc_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/nama"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:minLines="1"
+            app:boxBackgroundMode="none"
+            app:boxStrokeWidth="1dp"
+            app:hintEnabled="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/desc_harga_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_nama_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/desc_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/harga"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:minLines="1"
+            app:boxBackgroundMode="none"
+            app:boxStrokeWidth="1dp"
+            app:hintEnabled="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/desc_take_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/take_image_to_upload_to_market"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/cameraXButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc_harga_layout" />
+
+    <Button
         android:id="@+id/cameraXButton"
         android:layout_width="0dp"
         android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
         android:elevation="2dp"
         android:scaleType="fitCenter"
-        android:textSize="16sp"
         android:text="@string/camera"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/uploadButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc_take_image" />
 
     <Button
         android:id="@+id/uploadButton"
@@ -42,7 +112,8 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cameraXButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

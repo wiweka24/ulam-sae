@@ -15,9 +15,13 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
+import androidx.lifecycle.ViewModelProvider
 import com.senpro.ulamsae.api.ApiConfig
 import com.senpro.ulamsae.databinding.ActivityCameraBinding
+import com.senpro.ulamsae.ui.ViewModelFactory
 import com.senpro.ulamsae.ui.livecamera.LiveCameraActivity
+import com.senpro.ulamsae.ui.login.LoginActivityViewModel
+import com.senpro.ulamsae.ui.register.RegisterActivityViewModel
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
@@ -30,6 +34,7 @@ class CameraActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCameraBinding
     private var getFile: File? = null
+    private lateinit var viewModel: CameraViewModel
 
     companion object {
         const val CAMERA_X_RESULT = 200
@@ -53,6 +58,7 @@ class CameraActivity : AppCompatActivity() {
         }
 
         setupAction()
+        setupViewModel()
     }
 
     private fun setupAction() {
@@ -62,6 +68,10 @@ class CameraActivity : AppCompatActivity() {
         }
 
         binding.uploadButton.setOnClickListener { uploadImage() }
+    }
+
+    private fun setupViewModel() {
+        viewModel = ViewModelProvider(this, ViewModelFactory(this))[CameraViewModel::class.java]
     }
 
     override fun onRequestPermissionsResult(
@@ -117,36 +127,11 @@ class CameraActivity : AppCompatActivity() {
     private fun uploadImage() {
         if (getFile != null) {
             val file = reduceFileImage(getFile as File)
+            val nama = binding.descNama.text.toString()
+            val harga = binding.descHarga.text.toString()
 
-            val description = "Ini adalah deksripsi gambar".toRequestBody("text/plain".toMediaType())
-            val requestImageFile = file.asRequestBody("image/jpeg".toMediaTypeOrNull())
-            val imageMultipart: MultipartBody.Part = MultipartBody.Part.createFormData(
-                "photo",
-                file.name,
-                requestImageFile
-            )
-
-//            val service = ApiConfig().getApiService().uploadImage(imageMultipart, description)
-//
-//            service.enqueue(object : Callback<FileUploadResponse> {
-//                override fun onResponse(
-//                    call: Call<FileUploadResponse>,
-//                    response: Response<FileUploadResponse>
-//                ) {
-//                    if (response.isSuccessful) {
-//                        val responseBody = response.body()
-//                        if (responseBody != null && !responseBody.error) {
-//                            Toast.makeText(this@CameraActivity, responseBody.message, Toast.LENGTH_SHORT).show()
-//                        }
-//                    } else {
-//                        Toast.makeText(this@CameraActivity, response.message(), Toast.LENGTH_SHORT).show()
-//                    }
-//                }
-//                override fun onFailure(call: Call<FileUploadResponse>, t: Throwable) {
-//                    Toast.makeText(this@CameraActivity, "Gagal instance Retrofit", Toast.LENGTH_SHORT).show()
-//                }
-//            })
-
+            viewModel.addFish(nama, harga, file)
+            finish()
         } else {
             Toast.makeText(this@CameraActivity, "Silakan masukkan berkas gambar terlebih dahulu.", Toast.LENGTH_SHORT).show()
         }

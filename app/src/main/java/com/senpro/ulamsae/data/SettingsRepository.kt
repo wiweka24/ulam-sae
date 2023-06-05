@@ -2,10 +2,35 @@ package com.senpro.ulamsae.data
 
 import android.content.Context
 import android.provider.Telephony.Carriers.PASSWORD
+import androidx.lifecycle.LiveData
+import com.senpro.ulamsae.model.Market
 import com.senpro.ulamsae.model.Settings
+import java.io.File
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
 
 class SettingsRepository(context: Context)  {
     private val preferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+    private val mMarketDao: MarketDao
+    private val executorService: ExecutorService = Executors.newSingleThreadExecutor()
+
+    init {
+        val db = MarketDatabase.getDatabase(context)
+        mMarketDao = db.marketDao()
+    }
+
+    fun addFish(nama: String, harga:String, file: File) {
+        executorService.execute {
+            val newFish = Market(
+                nama,
+                harga,
+                file
+            )
+            mMarketDao.addFish(newFish)
+        }
+    }
+
+    fun getAllFish(): LiveData<List<Market>> = mMarketDao.getAllFish()
 
     fun setDarkMode(value: Int) {
         val editor = preferences.edit()
