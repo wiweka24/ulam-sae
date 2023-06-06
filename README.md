@@ -35,5 +35,5 @@ Untuk mencoba project, test-apk dapat di unduh pada
 1. Buka menu Actions
 2. Pada menu All workflows pilih pada workflow runs yang berhasil
 3. Scroll hingga bawah dan anda menemukan test_apk, klik untuk unduh
-4. File berupa zip dan dapat di ekstrak didalmnya berupa apk lalu instal pada perangkat android
+4. File berupa zip dan dapat di ekstrak didalamnya berupa apk lalu instal pada perangkat android
 
