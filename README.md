@@ -20,9 +20,9 @@ Produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas Praktikum Senior P
 ## Kelompok Ikan Segar
 |                 |                    |                    |
 | --------------- | ------------------ | ------------------ |
-| Ketua Kelompok  | Wiweka Yoga Sadewa | 20/456382/TK/50512 |
-| Anggota 1       | M Rifat Bagus A    | 20/456371/TK/50501 |
-| Anggota 2       | Ilham Faizal Hamka | 20/463602/TK/51594 |
+| Ketua           | [Wiweka Yoga Sadewa](https://github.com/wiweka24) | 20/456382/TK/50512 |
+| Anggota 1       | [M Rifat Bagus A](https://github.com/muhammadrifatba) | 20/456371/TK/50501 |
+| Anggota 2       | [Ilham Faizal Hamka](https://github.com/Ilham-Faizal-Hamka) | 20/463602/TK/51594 |
 
 ## Github Pages
 https://wiweka24.github.io/ulam-sae/
