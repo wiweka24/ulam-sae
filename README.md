@@ -27,3 +27,6 @@ Produk pendeteksi kesegaran ikan, dibuat untuk memenuhi tugas Praktikum Senior P
 
 ## Github Pages
 https://wiweka24.github.io/ulam-sae/
+
+## Auth API 
+https://github.com/Ilham-Faizal-Hamka/login-register-hapi
